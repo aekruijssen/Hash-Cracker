@@ -1,0 +1,21 @@
+Adina Kruijssen
+3668744156
+
+Project 1: Password Cracking Analysis:
+
+The first two passwords took less than a second to find.
+The third took 13 seconds. Any passwords 4 characters or
+longer took too long to test using the normal password
+generating algorithm, but did work when fed just their hashes.
+The longer the password the longer it takes to crack, since 
+the program has to iterate through a lot more characters and
+come up with a more complex combination, checking each along 
+the way. The password cracking could be done faster through
+the use of multi-proccessing. I could also have made the 
+password generator more efficient. For example, I had it
+so after it completed the checking of a certain number of 
+characters, when it went one up (so from 3 to 4 characters),
+the password iterator list reset, having to redo the first,
+in this example, 3 character combos over again. To make it more
+efficient, I would make it so it wouldn't redo any combos it
+had already generated.
